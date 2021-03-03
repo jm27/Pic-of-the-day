@@ -1,13 +1,61 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../src/imgs/mooning_@2X.png");
+}
+.card {
+  background-image: url("../src/imgs/texturetastic_gray_@2X.png");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn,
+.card,
+.page-item,
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-shadow: -1px 1px 5px rgba(5, 18, 27, 0.52);
+  font-family: "Kanit", sans-serif;
+}
+
+/* Loader */
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-left: 4px solid;
+  animation: load 1s infinite linear;
+  border-radius: 50%;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.fa-stack:hover,
+.fa-stack:active,
+.fa-stack:focus,
+.fa-stack:visited {
+  color: black;
+}
+
+.footer-logo {
+  max-height: 70px;
+}
+
+.App {
+  margin-bottom: 8rem;
 }
