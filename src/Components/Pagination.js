@@ -12,13 +12,12 @@ function Pagination({ picsPerPage, totalPics, paginate }) {
         <ul className="pagination pagination-lg">
           {pageNumbers.map((number) => (
             <li className="page-item" key={number}>
-              <a
+              <button
                 onClick={() => paginate(number)}
-                href="!#"
                 className="page-link text-dark"
               >
                 {number}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
