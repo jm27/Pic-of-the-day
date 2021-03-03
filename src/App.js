@@ -15,7 +15,7 @@ import Pagination from "./Components/Pagination";
 dotenv.config();
 
 function App() {
-  const apiKey = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}`;
+  const apiKey = `https://api.nasa.gov/planetary/apod?api_key=UNGhJmUc9LxwxgrdDUCjSTUnddcp87cQrPJPCONq`;
   // Create state for Url, object, date, loading
   const [url, setUrl] = useState(apiKey);
   const [pictures, setPictures] = useState([]);
